@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <style>
+    body {
+      min-height: 100vh;
+      margin-left: 20%;
+    }
+
+    .popover {
+      width: 20em;
+      height: 14em;
+      border-radius: 5px;
+      background-color: whitesmoke;
+      font-family: Arial;
+      color: gray;
+      border: 1px solid lightgray;
+      font-size: 14px;
+    }
+
+    .popover__title, .popover__date, .popover__invites {
+      border-bottom: 1px solid gainsboro;
+    }
+
+    .popover__title--event {
+      font-size: 16px;
+    }
+
+    .popover__date--main {
+      color: black;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .popover__title, .popover__date, .popover__invites, .popover__notes {
+      padding: 0.6em 0.8em;
+    }
+
+    .arrow-left {
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-right:10px solid whitesmoke;
+      margin-left: -21px;
+      position: absolute;
+    }
+  </style>
+</head>
+<!-- sections should be text boxes placeholder property, style that -->
+<!-- all have labels even if screen reader only -->
+<!-- arrow is a pseudo element -->
+<!-- a second arrow for the border of arrow -->
+<body>
+  <form class='popover'>
+    <section class='popover__title'>
+      <span class='popover__title--event'>New Event</span>
+      <span>Add Location</span>
+    </section>
+    <section class='popover__date'>
+      <span class='popover__date--main'>Date</span>
+      <div class='arrow-left'></div>
+      <span>Add Alert, Repeat, or Travel Time</span>
+    </section>
+    <section class='popover__invites'>Add Invitees</section>
+    <section class='popover__notes'>Add Notes, URL, or Attachments</section>
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+// To give extra margin/padding between text and the 'underline'
+
+// HTML
+<h1>Title</h1>
+
+// CSS
+h1 {
+  display: inline-block;
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: rem-calc(16);
+  width: 100%;
+  border-bottom: 3px solid $i5;
+  margin-top: 12px;
+}

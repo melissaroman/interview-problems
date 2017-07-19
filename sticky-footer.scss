@@ -1,0 +1,20 @@
+body {
+  height: 100%;
+}
+
+// If there's a wrapper inside the body, use this. If not, put this inside the body.
+.page-wrap {
+  min-height: calc(100vh - 95px); // Must equal height of footer
+}
+
+.footer {
+  height: 95px; // Must have a fixed height
+}
+
+// HTML:
+<body>
+  <page-wrap>
+  </page-wrap>
+  <footer>
+  </footer>
+</body>
